@@ -1,0 +1,42 @@
+#header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: 8vh;
+	padding: 0 2vw;
+	transition: 0.5s all ease-out;
+}
+
+#title {
+	color: whitesmoke;
+	font-family: KoHo;
+	font-weight: 700;
+	font-size: 150%;
+	text-decoration: none;
+}
+
+#navbar {
+	display: flex;
+    align-items: center;
+}
+
+.nav-button {
+	color: whitesmoke;
+	font-family: KoHo;
+	font-weight: 500;
+	font-size: 110%;
+	text-transform: capitalize;
+	text-decoration-line: none;
+	margin: 0 5px;
+	transition: color 0.5s ease-out;
+}
+
+.nav-button:hover {
+	transition: color 0.25s ease-in;
+	color: rgba(0, 176, 240, 255);
+}
+
+.nav-button.icon {
+	font-size: 4vh;
+}

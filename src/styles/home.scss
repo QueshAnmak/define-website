@@ -1,0 +1,78 @@
+#left-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	--padding: 5vw;
+	width: 60%;
+	padding: 0 var(--padding);
+	transition: 0.5s all ease-out;
+}
+
+#info-heading {
+	color: rgba(0, 176, 240, 255);
+	font-family: cascadia code;
+	font-size: calc(4.5vh + 2.5vw);
+	text-align: center;
+	margin: 0;
+}
+
+#info-text {
+	color: whitesmoke;
+	font-family: Consolas;
+	font-size: calc(2.5vh + 1vw);
+	text-align: center;
+}
+
+#right-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40%;
+}
+
+#logo-container {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	top: 80%;
+	right: 20%;
+	transition: all 0.5s ease-out;
+}
+
+#logo-container.position-center {
+	right: 50%;
+	top: 70vh;
+}
+
+#logo-image-container {
+	display: flex;
+	position: absolute;
+	align-items: flex-end;
+	justify-content: center;
+	width: 0;
+	height: 0;
+	transition: 0.5s all ease-out;
+}
+
+.logo-image {
+	position: absolute;
+	max-width: 35vw;
+	max-height: 60vh;
+}
+
+#logo-text-container {
+	display: flex;
+	position: absolute;
+	align-items: flex-start;
+	justify-content: center;
+	width: 0;
+	height: 0;
+}
+
+#logo-text {
+	position: absolute;
+	max-height: 15vh;
+	max-width: 40vw;
+}
+
