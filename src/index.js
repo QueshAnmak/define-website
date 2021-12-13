@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import Home from './routes/home'
 import Home from './routes/home';
 import About from './routes/about';
-import Team from './routes/team';
+import Team from './routes/team.tsx';
 import Events from './routes/events';
 
 ReactDOM.render(
