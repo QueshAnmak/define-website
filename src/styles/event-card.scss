@@ -1,5 +1,37 @@
-.event-card{
-    width: 5em;
-    height: 5em;
-    border: 1px white solid;
+$card-mouse-enter-transtion: 0.32s all ease-out;
+$card-mouse-leave-transtion: 0.5s all ease-out;
+
+.event-grid .event-card {
+	position: relative;
+	overflow: hidden;
+	width: 320px;
+	height: 400px;
+	border: 1px white solid;
+	margin: 20px 10px;
+	border-radius: 24px;
+}
+
+.event-card-image {
+	position: relative;
+	width: 100%;
+	transition: $card-mouse-leave-transtion;
+}
+
+.event-card-info {
+	position: absolute;
+	bottom: -40%;
+	width: 100%;
+	height: 40%;
+	background-color: rgb(0, 208, 255);
+	transition: $card-mouse-leave-transtion;
+}
+
+.event-card:hover .event-card-image {
+	transform: translateY(-20%);
+	transition: $card-mouse-enter-transtion;
+}
+
+.event-card:hover .event-card-info {
+	bottom: 0%;
+	transition: $card-mouse-enter-transtion;
 }

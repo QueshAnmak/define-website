@@ -1,8 +1,10 @@
 .event-grid{
-    // display: flex;
-    // flex-wrap: wrap;
-    // box-sizing: border-box;
-    // padding: 1em 1em;
-    // width: 100%;
-    // border: 1px white solid;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 1em 1em;
+    width: 100%;
+    border: 1px white solid;
 }
+
