@@ -12,7 +12,9 @@ function Team() {
 			<section id="main">
 				
 				<PageTitle title="The Team" />
-				<MemberList />
+				<MemberList heading="Founders" />
+				<MemberList heading="Leaders" />
+				<MemberList heading="Senior Council" />
 
 			</section>
 			<Footer />
