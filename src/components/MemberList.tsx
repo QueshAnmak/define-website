@@ -4,6 +4,7 @@ import '../styles/MemberList.scss';
 
 interface propInterface {
     heading: String
+    teamList: Array<any>
 }
 
 function MemberList(prop: propInterface) {
@@ -14,7 +15,7 @@ function MemberList(prop: propInterface) {
         description: string,
     }
 
-    const [memberList, setMemberList] = useState<any>((memberData as any).default || null);
+    // const [memberList, setMemberList] = useState<any>((memberData as any).default || null);
 
     async function getMembers() {
         // const response = await fetch('https://api.github.com/orgs/hash-define-organization/members');
@@ -31,7 +32,7 @@ function MemberList(prop: propInterface) {
             <div className="list__heading">{prop.heading}</div>
             <div className="member_list--container">
                 {
-                    memberList?.map((member: Member) =>
+                    prop.teamList?.map((member: Member) =>
                         <>
                             <div className="member">
                                 <img src={member.profileImage} alt={member.name} className = "member__image" />
