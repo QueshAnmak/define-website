@@ -22,7 +22,7 @@ function Team() {
 				{
 					teamData.map((data: any) => {
 						return (
-							<MemberList heading={data["TeamName"]} teamList = {data.teamList} />
+							<MemberList heading={data["TeamName"]} teamList = {data.TeamList} />
 						)
 					})
 				}

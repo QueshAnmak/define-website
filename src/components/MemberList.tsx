@@ -23,22 +23,36 @@ function MemberList(prop: propInterface) {
         // setMemberList(data);
     }
 
-    useEffect(()=>{
-        getMembers();
-    },[]);
+    // useEffect(()=>{
+    //     getMembers();
+    // },[]);
+
+    // console.log(prop.teamList)
 
     return (
         <div className = "member_list">
             <div className="list__heading">{prop.heading}</div>
             <div className="member_list--container">
                 {
-                    prop.teamList?.map((member: Member) =>
-                        <>
+                    prop.teamList?.map((member: any) => {
+                        
+                        let currImage;
+                        
+                        try {
+                            currImage = require(`../assets/images/${member.Name}.jpg`);
+                            console.log(currImage)
+                        }
+                        catch {
+                            currImage = require(`../assets/images/default.jpg`);
+                        }
+
+                        return <>
                             <div className="member">
-                                <img src={member.profileImage} alt={member.name} className = "member__image" />
+                                <img src={(currImage as any).default} alt={member.Name} className = "member__image"  />
                             </div>
                         </>
-                    )
+
+                    })
                 }
             </div>
         </div>
