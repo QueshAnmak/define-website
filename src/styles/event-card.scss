@@ -1,6 +1,6 @@
 $card-width: 280px;
-$card-height:$card-width/2 * 3; 
-$card-mouse-enter-transtion: 0.32s ease-out;
+$card-height: $card-width/2 * 3;
+$card-mouse-enter-transtion: 0.24s ease-out;
 $card-mouse-leave-transtion: 0.5s ease-out;
 
 .event-grid .event-card {
@@ -25,26 +25,25 @@ $card-mouse-leave-transtion: 0.5s ease-out;
 	justify-content: center;
 	flex-direction: column;
 	position: absolute;
-	bottom: -2%;
+	top: 0%;
 	width: 100%;
-	height: 120%;
+	height: 101%;
 	opacity: 0;
 	color: white;
-
 	transition: $card-mouse-leave-transtion;
 }
 
 .event-card:hover {
 	.event-card-image {
-		// transform: translateY(-20%);
 		filter: blur(16px) saturate(180%);
 		transition: $card-mouse-enter-transtion;
 	}
-
+	
 	.event-card-info {
 		background-color: rgba(17, 25, 40, 0.75);
 		bottom: 0%;
 		opacity: 1;
+		transform: translateY(-1%);
 		transition: $card-mouse-enter-transtion;
 	}
 }
