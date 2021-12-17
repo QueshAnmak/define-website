@@ -6,13 +6,18 @@
 
 #app {
 	/* overflow: hidden; */
-
+	// position: absolute;
 	min-height: 100vh;
 	height: 100%;
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
 	transition: 0.5s all ease-out;
-	background: rgba(12, 12, 12, 1);
+	background: radial-gradient(
+		circle,
+		rgba(34, 42, 53, 1) 0%,
+		rgba(12, 12, 12, 1) 100%
+	);
+	background-attachment: fixed;
 }
 
 // .hide-and-disable {
