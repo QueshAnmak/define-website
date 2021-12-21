@@ -40,7 +40,7 @@ function MemberList(prop: propInterface) {
                         
                         try {
                             currImage = require(`../assets/images/${member.Name}.jpg`);
-                            console.log(currImage)
+                            // console.log(currImage)
                         }
                         catch {
                             currImage = require(`../assets/images/default.jpg`);
