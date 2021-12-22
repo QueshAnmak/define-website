@@ -13,40 +13,33 @@ import '../styles/home.scss';
 // components
 import Header from '../components/header';
 import Footer from '../components/footer';
+import PageTemplate from './PageTemplate';
 
 
-export default function Home()
+export default function Home ()
 {
   return (
-    <div id="app">
+    <PageTemplate>
+      <section id="left-container">
+        <div id="info">
+          <h1 id="info-heading">
+            Join #define
+          </h1>
+          <p id="info-text">
+            We aim to build a platform that will not only encourage you to find which domain interests you but
+            will also help you to come forward and gain expertise in that.
+          </p>
+        </div>
+      </section>
 
-        <Header />
-
-        <section id="main">
-          <section id="left-container">
-            <div id="info">
-              <h1 id="info-heading">
-                Join #define
-              </h1>
-              <p id="info-text">
-                We aim to build a platform that will not only encourage you to find which domain interests you but
-                will also help you to come forward and gain expertise in that.
-              </p>
-            </div>
-          </section>
-
-          <section id="right-container">
-            <div id="logo-container">
-              <div id="logo-image-container">
-                <img class="logo-image outline" src={define_logo_outline} alt="define logo outline" />
-              </div>
-            </div>
-          </section>
-        </section>
-
-        <Footer />
-
-    </div>
+      <section id="right-container">
+        <div id="logo-container">
+          <div id="logo-image-container">
+            <img class="logo-image outline" src={ define_logo_outline } alt="define logo outline" />
+          </div>
+        </div>
+      </section>
+    </PageTemplate>
   );
 }
 
