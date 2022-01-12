@@ -28,7 +28,7 @@ export function TeamMemberCard ( props: any )
     return (
         <div className="team-member-card">
             <div className="card-data">
-                <img src={ getProfileImage( member.name ).default } alt={ member.name } className="team-member-image" />
+                <img src={ getProfileImage( member.name ).default } alt={ member.name } className="team-member-image" loading="lazy"/>
                 <span className='team-member-name'>{ member.name }</span>
                 <div className="card-button-container">
                     <a href={ member.github } className="card-button">
