@@ -8,21 +8,6 @@
 	transition: 0.5s all ease-out;
 }
 
-#info-heading {
-	color: rgba(0, 176, 240, 255);
-	font-family: cascadia code;
-	font-size: calc(4.5vh + 2.5vw);
-	text-align: center;
-	margin: 0;
-}
-
-#info-text {
-	color: whitesmoke;
-	font-family: Consolas;
-	font-size: calc(2.5vh + 1vw);
-	text-align: center;
-}
-
 #right-container {
 	display: flex;
 	align-items: center;
@@ -75,4 +60,3 @@
 	max-height: 15vh;
 	max-width: 40vw;
 }
-

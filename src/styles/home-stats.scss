@@ -1,0 +1,34 @@
+.home-stats {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 50vh;
+
+	.stat {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 8rem;
+		height: 8rem;
+		border-radius: 100%;
+		border: 24px solid white;
+
+		color: whitesmoke;
+		font-family: cascadia code;
+		font-size: 2.4rem;
+		text-align: center;
+		margin: 0;
+	}
+
+	.stat-1 {
+		border-color: red;
+	}
+	.stat-2 {
+		border-color: green;
+	}
+	.stat-3 {
+		border-color: yellow;
+	}
+}
