@@ -60,3 +60,18 @@
 	max-height: 15vh;
 	max-width: 40vw;
 }
+
+.text-heading{
+	font-family: 'koho';
+	font-size: calc(4.5vh + 2.5vw);
+	color: rgba(0, 176, 240, 255);
+	text-align: center;
+	margin: 0;
+}
+
+.text-para{
+	font-family: 'koho';
+	font-size: calc(2.5vh + 1vw);
+	color: whitesmoke;
+	text-align: center;
+}

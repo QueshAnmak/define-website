@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/961a181da27e7cbc072ec2fb5bbfe2a9?family=Circular+Std+Bold);
+
 .landing {
 	display: flex;
 	height: calc(92vh - 48px); // 100vh - header
@@ -7,8 +9,6 @@
 	margin: 24px;
 
 	border-radius: 16px; // 0 0 12px;
-	border: 1px solid rgba(255, 255, 255, 0.08);
-	// background-color: rgba(17, 25, 40, 0.75);
 	background: rgb(34, 42, 53);
 	background: linear-gradient(
 		90deg,
@@ -32,20 +32,22 @@
 		height: 100%;
 		box-sizing: border-box;
 		padding: 0 24px;
-		.heading {
-			color: rgba(0, 176, 240, 255);
-			font-family: cascadia code;
-			font-size: calc(4.5vh + 2.5vw);
-			text-align: center;
-			margin: 0;
-		}
+		// .heading {
+		// 	color: rgba(0, 176, 240, 255);
+		// 	font-family: circular std bold;
+		// 	// font-family: koho;
+		// 	font-size: calc(4.5vh + 2.5vw);
+		// 	text-align: center;
+		// 	margin: 0;
+		// }
 
-		.text {
-			color: whitesmoke;
-			font-family: Consolas;
-			font-size: calc(2.5vh + 1vw);
-			text-align: center;
-		}
+		// .text {
+		// 	color: whitesmoke;
+		// 	font-family: koho;
+		// 	// font-family: circular std bold;
+		// 	font-size: calc(2.5vh + 1vw);
+		// 	text-align: center;
+		// }
 	}
 
 	.right {

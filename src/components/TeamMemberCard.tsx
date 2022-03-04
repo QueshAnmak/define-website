@@ -5,6 +5,7 @@ import '../styles/team-member-card.scss';
 
 function getProfileImage ( memberName: string )
 {
+
     let profileImage;
 
     try

@@ -9,11 +9,15 @@ export function HomeAboutUs ()
     </div>
     <div className='right'>
       <div className='bg' />
-      <span className='heading'>
+      <h2 className='text-heading'>
         What is #define?
-      </span>
-      <p className='text'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tincidunt diam dui, non aliquam tortor varius vel. Aliquam nisi risus, consequat sit amet vestibulum maximus, viverra vitae nisi. Cras facilisis sit amet odio sed ultrices. Curabitur non purus neque. Aenean nec neque dignissim, faucibus leo nec, tincidunt nisl. Sed velit nibh, fringilla ac eleifend vitae, iaculis id massa.
+      </h2>
+      <p className='text-para'>
+        #define is a non-profit organisation which conducts
+        technical and non-technical events across colleges and
+        aims to give life to a coding culture that promotes
+        learning that is motivated by a fascination for new
+        technologies.
       </p>
     </div>
   </div>;
